@@ -10,6 +10,7 @@ import "@aws-amplify/ui-react/styles.css";
 
 Amplify.configure(outputs);
 
+export default function App() {
   return (
     <main>
       <h1>Working on things...</h1>
