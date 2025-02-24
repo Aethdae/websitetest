@@ -25,6 +25,12 @@ export default function App() {
     listTodos();
   }, []);
 
+  function visitVideoLink() {
+    client.models.Todo.create({
+      content: window.prompt("Enter video link"),
+    });
+  }
+
   function createTodo() {
     client.models.Todo.create({
       content: window.prompt("Todo content"),
